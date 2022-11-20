@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(70, 119, 246);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.google__map{
+    width: 450px;
+    height: 685px;
+    padding: 40px 30px;
+    background-color: #fff;
+    margin-top: 20px;
+    position: relative;
+}
+
+.google__map-header{
+    display: flex;
+}
+
+.menu , .search{
+    margin: 0;
+    cursor: pointer;
+    color: rgb(173, 170, 170);
+    transition: 0.3s ease;
+}
+
+.menu:hover{
+    color: #000;
+}
+
+.search:hover{
+    color: #000;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.google__map-map{
+    width: 470px;
+    height: 145px;
+    background: url(./img/map.png) #91b0fa;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    border-radius: 5px;
+    position: absolute;
+    left: -10px;
+    top: 80px;
+    padding: 40px 40px 50px;
+    color: #fff;
+}
+
+.google__map-map::after{
+    content: "";
+    width: 190px;
+    height: 2px;
+    background: linear-gradient(to right, #fff 0%, #fff 40%, rgb(189, 204, 244) 40%, rgb(189, 204, 244) 100%);
+    position: absolute;
+    top: 50px;
+    left: 140px;
+}
+
+.distance{
+    display: flex;
+    justify-content: space-between;
+}
+
+.distance div{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.circle{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.car{
+    position: absolute;
+    top: 22px;
+    left: 203px;
+}
+
+.time{
+    display: flex;
+    gap: 90px;
+}
+
+.time p{
+    font-weight: 500;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.time p span{
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.btn{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 40px;
+    background-color: rgb(70, 119, 246);
+    border-radius: 5px;
+    gap: 8px;
+    position: absolute;
+    top: 120px;
+    right: 30px;
+    transition: 0.3s ease;
+}
+
+.btn:hover{
+    background-color: rgb(86, 132, 249);
+}
+
+.btn svg{
+    margin: 0;
+}
+
+.heading{
+    margin-top: 200px;
+    font-size: 16px;
+}
+
+.route{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.route svg{
+    margin: 0;
+}
+
+.place{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.grey{
+    font-size: 12px;
+    color: #aaaaaa;
+}
+
+.location{
+    width: 420px;
+    height: 70px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    background: url(./img/streetview.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.location svg{
+    margin: 0;
+}
